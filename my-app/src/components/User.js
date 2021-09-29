@@ -20,6 +20,7 @@ class User extends React.Component {
     }
 
     render() {
+         // deconstruct state
         const { user } = this.state
 
         if (!this.state.user) 
@@ -33,6 +34,8 @@ class User extends React.Component {
                 alt={user.name}/>
                 <h3>{user.name}</h3>
                 <p>Username: { user.login}</p>
+                <p>Followers: { user.followers}</p>
+                <p>Following: { user.following}</p>
             </div>
         )
     }
